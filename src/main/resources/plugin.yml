@@ -1,0 +1,17 @@
+name: Helpers
+version: '${project.version}'
+main: com.haroon.helpers.Main
+api-version: 1.18
+commands:
+  mutechat:
+    description: gives the player an item that mutes the chat
+    aliases: mutethechat
+  vanish:
+    description: makes the player invisible
+    aliases: vanishme
+  banner:
+    description: gives player a custom banner
+    aliases: givebanner
+  bannerhelmet:
+    description: puts a banner on a player's head
+    aliases: putabanneronmyhead
