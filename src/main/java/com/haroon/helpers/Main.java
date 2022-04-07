@@ -2,6 +2,7 @@ package com.haroon.helpers;
 
 import com.haroon.helpers.Commands.Banner;
 import com.haroon.helpers.Commands.BannerHelmet;
+import com.haroon.helpers.Commands.Punish;
 import com.haroon.helpers.Commands.Vanish;
 import com.haroon.helpers.Items.MuteChat;
 import org.bukkit.Bukkit;
@@ -20,6 +21,7 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginCommand("vanish").setExecutor(new Vanish());
         Bukkit.getPluginCommand("banner").setExecutor(new Banner());
         Bukkit.getPluginCommand("bannerhelmet").setExecutor(new BannerHelmet());
+        Bukkit.getPluginCommand("punish").setExecutor(new Punish());
 
     }
 

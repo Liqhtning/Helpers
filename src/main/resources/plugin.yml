@@ -15,3 +15,7 @@ commands:
   bannerhelmet:
     description: puts a banner on a player's head
     aliases: putabanneronmyhead
+  punish:
+    description: a command that punishes a player by kicking them, banning them, or temporarilly banning them
+    aliases: punish
+
