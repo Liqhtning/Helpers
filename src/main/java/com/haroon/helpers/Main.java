@@ -1,9 +1,6 @@
 package com.haroon.helpers;
 
-import com.haroon.helpers.Commands.Banner;
-import com.haroon.helpers.Commands.BannerHelmet;
-import com.haroon.helpers.Commands.Punish;
-import com.haroon.helpers.Commands.Vanish;
+import com.haroon.helpers.Commands.*;
 import com.haroon.helpers.Items.MuteChat;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -17,11 +14,13 @@ public final class Main extends JavaPlugin {
         Bukkit.getPluginManager().registerEvents(new MuteChat(), this);
 
         // Commands
-        Bukkit.getPluginCommand("MuteChat").setExecutor(new MuteChat());
-        Bukkit.getPluginCommand("vanish").setExecutor(new Vanish());
-        Bukkit.getPluginCommand("banner").setExecutor(new Banner());
-        Bukkit.getPluginCommand("bannerhelmet").setExecutor(new BannerHelmet());
-        Bukkit.getPluginCommand("punish").setExecutor(new Punish());
+        getCommand("mutechat").setExecutor(new MuteChat());
+        getCommand("vanish").setExecutor(new Vanish());
+        getCommand("banner").setExecutor(new Banner());
+        getCommand("bannerhelmet").setExecutor(new BannerHelmet());
+        getCommand("punish").setExecutor(new Punish());
+        getCommand("enderchest").setExecutor(new EnderChest());
+        getCommand("test").setExecutor(new Test());
 
     }
 

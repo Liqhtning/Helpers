@@ -30,7 +30,7 @@ public class Punish implements CommandExecutor {
                         case "ban":
                             assert target != null;
                             Bukkit.getBanList(BanList.Type.NAME).addBan(target.getName(), "Being a bad player\nPlease appeal!", null, null);
-                            target.kickPlayer("You have been banned!");
+                            target.kickPlayer("The Ban Hammer has spoken!");
                             break;
                         case "tempban":
                             Calendar cal = Calendar.getInstance();
